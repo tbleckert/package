@@ -1,5 +1,5 @@
 <h1 align="center">
-  Simple DOM event delegation
+  Package template
 </h1>
 
 <h6 align="center">
@@ -22,14 +22,12 @@
 
 ## Install
 
-`npm i @bleckert/delegate-event` or `yarn add @bleckert/delegate-event`
+`npm i @bleckert/package` or `yarn add @bleckert/package`
 
 ## Usage
 
 ```javascript
-import delegateEvent from '@bleckert/delegate-event';
+import myFunction from '@bleckert/package';
 
-delegateEvent(document.body, 'click', 'button', (event, element) => {
-  console.log(element);
-});
+myFunction();
 ```
