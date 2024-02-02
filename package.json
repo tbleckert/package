@@ -1,0 +1,40 @@
+{
+    "name": "@bleckert/package",
+    "repository": "https://github.com/tbleckert/package",
+    "version": "1.0.1",
+    "description": "Package template",
+    "source": "src/index.js",
+    "module": "dist/module.js",
+    "exports": "./dist/module.js",
+    "type": "module",
+    "scripts": {
+        "start": "parcel example/index.html",
+        "watch": "parcel watch",
+        "build": "parcel build",
+        "size": "size-limit",
+        "test": "vitest && size-limit",
+        "coverage": "vitest --run --coverage"
+    },
+    "size-limit": [
+        {
+            "path": "dist/module.js",
+            "limit": "0.1 kB"
+        }
+    ],
+    "keywords": [
+        "js",
+        "dom",
+        "event",
+        "delegation"
+    ],
+    "author": "Tobias Bleckert",
+    "license": "MIT",
+    "devDependencies": {
+        "@size-limit/preset-small-lib": "^11.0.2",
+        "@vitest/coverage-v8": "^1.2.2",
+        "parcel": "^2.11.0",
+        "prettier": "^3.2.4",
+        "size-limit": "^11.0.2",
+        "vitest": "^1.2.2"
+    }
+}
